@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <style>
+    li {
+      background:lightblue;
+      font-size: 3em;
+    }
+    .stuff {
+
+      text-decoration: line-through;
+    }
+  </style>
+</head>
+
+<body>
+ <ul>
+
+   <li>Be a Hero</li>
+   <li>Beat up Lars at the Cantine</li>
+   <li>Play videogames</li>
+   <li>Coffees</li>
+   <li>Sleep</li>
+   <li>Wat Kasper do Sanda</li>
+   <li>Dance</li>
+ </ul>
+
+  <script>
+  let liItems = document.querySelectorAll("li");
+    liItems.forEach(addClass);
+
+    function addClass(oneLi, index){
+      oneLi.addEventListener('click', listClicked);
+    }
+
+    function listClicked(evt){
+      console.log(evt.target);
+      evt.target.classList.toggle("stuff");
+    }
+  </script>
+
+
+
+
+
+
+
+
+</body>
+</html>
